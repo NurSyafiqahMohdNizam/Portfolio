@@ -311,3 +311,31 @@ a {
   }
 }
 }
+.project-note {
+  background: #f8fafc;
+  border: 1px solid #dbe6f3;
+  border-radius: 14px;
+  padding: 0.8rem 0.9rem;
+  color: #475569;
+  font-size: 0.92rem;
+  margin-bottom: 1rem;
+}
+
+.project-note a {
+  color: #1253a4;
+  font-weight: 800;
+  word-break: break-word;
+}
+
+.disabled-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dbe6f3;
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+  color: #94a3b8;
+  background: #f8fafc;
+  font-weight: 800;
+  cursor: not-allowed;
+}
