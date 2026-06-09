@@ -265,4 +265,49 @@ a {
   object-position: top;
   display: block;
 }
+
+.project-more {
+  margin-top: 1rem;
+}
+
+.project-more summary {
+  cursor: pointer;
+  color: #1253a4;
+  font-weight: 700;
+  font-size: 0.95rem;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.project-more summary::after {
+  content: "+";
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.project-more[open] summary::after {
+  content: "−";
+}
+
+.project-more summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-more[open] {
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 }
